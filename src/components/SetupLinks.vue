@@ -34,10 +34,10 @@
           v-for="(book,index) in filteredBookmakers" 
           :key="index" 
           draggable="true" 
-         @dragstart="dragStart(index, $event)"
-         @dragover.prevent           
-         @dragend="dragEnd" 
-         @drop="dragFinish(index)"
+          @dragstart="dragStart(index, $event)"
+          @dragover.prevent           
+          @dragend="dragEnd" 
+          @drop="dragFinish(index)"
         >
           <div class="col-3 d-flex flex-row ">
             <span class="mx-2 p-2">
@@ -473,46 +473,4 @@ select:focus-visible {
 input:focus-visible {
     outline: none;
 }
-
-
-// .heading {
-     
-//  
-// }
-
-// .disclaimer {
-
-//   font-size: 14px;
-//   padding: 20px 0 30px 20px;
-//   text-align: left;
-//   font-weight: 600;
-
-//   span {
-
-//     display: block;
-//   }
-// }
-
-// .tasks-list {
-
-//   padding: 20px 20px 0 40px;
-//   border-radius: 4px;
-
-//   li {
-
-//     font-size: 18px;
-//     text-align: left;
-//     margin-bottom: 14px;
-//     list-style: decimal;
-//   }
-// }
-
-// .endpoint {
-//   background: #ebedf0;
-//   padding: 10px;
-//   display: inline-block;
-//   border-radius: 2px;
-//   font-weight: bold;
-//   margin: 0 10px;
-// }
 </style>
